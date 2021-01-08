@@ -29,9 +29,9 @@ setl lispwords+=match-let,match-let*,match-let-values,match-let*-values
 setl lispwords+=match-letrec,match-define,match-define-values
 setl lisp
 
-" Enable auto begin new comment line when continuing from an old comment line
-setl comments+=:;
+" enable auto begin new comment line when continuing from an old comment line
+setl comments=:;;;;,:;;;,:;;,:;,sr:#\|,mb:\|,ex:\|#
+setl commentstring=;%s
 setl formatoptions+=r
 
-"setl commentstring=;;%s
-setl commentstring=#\|\ %s\ \|#
+let b:undo_ftplugin = 'setl iskeyword< lispwords< lisp< comments< commentstring< formatoptions<'
