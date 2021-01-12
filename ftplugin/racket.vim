@@ -30,8 +30,8 @@ setl lispwords+=match-letrec,match-define,match-define-values
 setl lisp
 
 " enable auto begin new comment line when continuing from an old comment line
-setl comments=:;;;;,:;;;,:;;,:;,s1:#\|,mb:\|,ex:\|#
-setl commentstring=;\ %s
+setl comments=:;;;;,:;;;,:;;,:;,sr:#\|,mb:\|,ex:\|#
+setl commentstring=;%s
 setl formatoptions-=t formatoptions+=croql
 
 let b:undo_ftplugin = 'setl iskeyword< lispwords< lisp< comments< commentstring< formatoptions<'
